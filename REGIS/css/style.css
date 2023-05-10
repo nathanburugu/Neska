@@ -1,0 +1,119 @@
+.info_section .info-logo {
+  font-family: 'Dosis', sans-serif;
+}
+
+.info_section h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.info_section .partner-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info_section .partner-box .box {
+  background-color: red;
+  padding: 5px 15px;
+}
+
+.info_items {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info_items .item {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.info_items .item .img-box {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.info_items .item .img-box:hover{
+  border: 2px solid white;
+}
+
+.info_items .item .detail-box {
+  margin-top: 25px;
+  color: white;
+}
+
+.info_items {
+  position: relative;
+}
+
+.info_items a {
+  position: relative;
+}
+
+.info_items::before {
+  content: "";
+  position: absolute;
+  top: 25%;
+  width: 80%;
+  height: 1px;
+  background-color: white;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.info_items .item .img-box.box-1 {
+  background-image: url(../images/location-black.png);
+}
+
+.info_items .item .img-box.box-2 {
+  background-image: url(../images/telephone-black.png);
+}
+
+.info_items .item .img-box.box-3 {
+  background-image: url(../images/envelope-black.png);
+}
+
+.info_items .item .img-box:hover {
+  background-color: transparent;
+}
+
+.info_items .item .img-box:hover.box-1 {
+  background-image: url(../images/location-white.png);
+}
+
+.info_items .item .img-box:hover.box-2 {
+  background-image: url(../images/telephone-white.png);
+}
+
+.info_items .item .img-box:hover.box-3 {
+  background-image: url(../images/envelope-white.png);
+}

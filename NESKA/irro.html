@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>NESKA/Our Security Products</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="irro-css/bootstrap.min.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="irro-css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="irro-css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- css-->
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+      <!-- fonts -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <link rel="stylesheet" href="front.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      /* Googlefont Poppins CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  min-height: 100vh;
+}
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  height: 70px;
+  background: black;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  z-index: 99;
+}
+nav .navbar{
+  height: 100%;
+  max-width: 1250px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  /* background: red; */
+  padding: 0 50px;
+}
+.navbar .logo a{
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 100;
+}
+nav .navbar .nav-links{
+  line-height: 70px;
+  height: 100%;
+}
+nav .navbar .links{
+  display: flex;
+}
+nav .navbar .links li{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0 14px;
+}
+nav .navbar .links li a{
+  height: 100%;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+.links li:hover .htmlcss-arrow,
+.links li:hover .js-arrow{
+  transform: rotate(180deg);
+  }
+
+nav .navbar .links li .arrow{
+  /* background: red; */
+  height: 100%;
+  width: 22px;
+  line-height: 70px;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+nav .navbar .links li .sub-menu{
+  position: absolute;
+  top: 70px;
+  left: 0;
+  line-height: 40px;
+  background: black;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 4px 4px;
+  display: none;
+  z-index: 2;
+}
+nav .navbar .links li:hover .htmlCss-sub-menu,
+nav .navbar .links li:hover .js-sub-menu{
+  display: block;
+}
+.navbar .links li .sub-menu li{
+  padding: 0 22px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.navbar .links li .sub-menu a{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+.navbar .links li .sub-menu .more-arrow{
+  line-height: 40px;
+}
+.navbar .links li .htmlCss-more-sub-menu{
+  /* line-height: 40px; */
+}
+.navbar .links li .sub-menu .more-sub-menu{
+  position: absolute;
+  top: 0;
+  left: 100%;
+  border-radius: 0 4px 4px 4px;
+  z-index: 1;
+  display: none;
+}
+.links li .sub-menu .more:hover .more-sub-menu{
+  display: block;
+}
+.navbar .search-box{
+  position: relative;
+   height: 40px;
+  width: 40px;
+}
+.navbar .search-box i{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.navbar .search-box .input-box{
+  position: absolute;
+  right: calc(100% - 40px);
+  top: 80px;
+  height: 40px;
+  width: 300px;
+  background: black;
+  border-radius: 6px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+.navbar.showInput .search-box .input-box{
+  top: 65px;
+  opacity: 1;
+  pointer-events: auto;
+  background: none;
+}
+.search-box .input-box::before{
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: none;
+  right: 10px;
+  top: -6px;
+  transform: rotate(45deg);
+}
+.search-box .input-box input{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+  height: 35px;
+  width: 280px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 16px;
+  border: none;
+}
+.navbar .nav-links .sidebar-logo{
+  display: none;
+}
+.navbar .bx-menu{
+  display: none;
+}
+@media (max-width:920px) {
+  nav .navbar{
+    max-width: 100%;
+    padding: 0 25px;
+  }
+
+  nav .navbar .logo a{
+    font-size: 27px;
+    font-weight: 200;
+  }
+  nav .navbar .links li{
+    padding: 0 10px;
+    white-space: nowrap;
+  }
+  nav .navbar .links li a{
+    font-size: 15px;
+  }
+}
+@media (max-width:800px){
+  nav{
+    /* position: relative; */
+  }
+  .navbar .bx-menu{
+    display: block;
+  }
+  nav .navbar .nav-links{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    display: block;
+    max-width: 500px;
+    width: 100%;
+    background: black;
+    line-height: 40px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+    z-index: 1000;
+  }
+  .navbar .nav-links .sidebar-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sidebar-logo .logo-name{
+    font-size: 25px;
+    color: #fff;
+  }
+    .sidebar-logo  i,
+    .navbar .bx-menu{
+      font-size: 25px;
+      color: #fff;
+    }
+  nav .navbar .links{
+    display: block;
+    margin-top: 20px;
+  }
+  nav .navbar .links li .arrow{
+    line-height: 40px;
+  }
+nav .navbar .links li{
+    display: block;
+  }
+nav .navbar .links li .sub-menu{
+  position: relative;
+  top: 0;
+  box-shadow: none;
+  display: none;
+}
+nav .navbar .links li .sub-menu li{
+  border-bottom: none;
+
+}
+.navbar .links li .sub-menu .more-sub-menu{
+  display: none;
+  position: relative;
+  left: 0;
+}
+.navbar .links li .sub-menu .more-sub-menu li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.links li:hover .htmlcss-arrow,
+.links li:hover .js-arrow{
+  transform: rotate(0deg);
+  }
+  .navbar .links li .sub-menu .more-sub-menu{
+    display: none;
+  }
+  .navbar .links li .sub-menu .more span{
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+  }
+
+  .links li .sub-menu .more:hover .more-sub-menu{
+    display: none;
+  }
+  nav .navbar .links li:hover .htmlCss-sub-menu,
+  nav .navbar .links li:hover .js-sub-menu{
+    display: none;
+  }
+.navbar .nav-links.show1 .links .htmlCss-sub-menu,
+  .navbar .nav-links.show3 .links .js-sub-menu,
+  .navbar .nav-links.show2 .links .more .more-sub-menu{
+      display: block;
+    }
+    .navbar .nav-links.show1 .links .htmlcss-arrow,
+    .navbar .nav-links.show3 .links .js-arrow{
+        transform: rotate(180deg);
+}
+    .navbar .nav-links.show2 .links .more-arrow{
+      transform: rotate(90deg);
+    }
+}
+@media (max-width:370px){
+  nav .navbar .nav-links{
+  max-width: 100%;
+} 
+}
+
+     </style>
+
+     <style>
+      /* gallery section start */
+
+.gallery_section {
+    width: 100%;
+    float: left;
+}
+
+.gallery_taital {
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-size: 40px;
+    color: #1f1f1f;
+    font-weight: bold;
+}
+
+.gallery_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    margin: 0px;
+    color: #2a2b2a;
+}
+
+.gallery_section_2 {
+    width: 100%;
+    float: left;
+    padding-top: 30px;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.container_main {
+    margin-top: 20px;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(57, 56, 56, 0.8);
+    margin: 0 auto;
+}
+
+.container_main:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.interior_text {
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.ipsum_text {
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 auto;
+    width: 65%;
+}
+
+.seemore_bt {
+    width: 170px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+}
+
+.seemore_bt a {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #252525;
+    padding: 10px 0px;
+    margin-top: 40px;
+    border-radius: 40px;
+}
+
+.seemore_bt a:hover {
+    background-color: #fcbf2d;
+    color: #ffffff;
+}
+
+/* gallery section end */
+  </style>
+
+   </head>
+   <body>
+      <nav>
+         <div class="navbar">
+           <i class='bx bx-menu'></i>
+           <div class="logo"><a href="#">NESKA</a></div>
+           <div class="nav-links">
+             <div class="sidebar-logo">
+               <span class="logo-name">NESKA</span>
+               <i class='bx bx-x' ></i>
+             </div>
+             <ul class="links">
+               <li><a href="index.html">HOME</a></li>
+               <li>
+                 <a href="#">STATES SECURITY</a>
+                 <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+                 <ul class="htmlCss-sub-menu sub-menu">
+                   <li><a href="private-team-guards.html">PRIVATE SECURITY MANAGEMENT</a></li>
+                   <li><a href="home electronics.html">ELECTRONIC LOCKING SYSTEMS</a></li>
+                 </ul>
+               </li>
+               <li>
+                 <a href="#">MORE</a>
+                 <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                 <ul class="js-sub-menu sub-menu">
+                   <li><a href="event single guard.html">EVENTS SECURITY SERVICES</a></li>
+                       <li><a href="banking.html">BAKING SECURITY SERVICES</a></li>
+                       <li><a href="prsnl team guards.html">PERSONEL SECURITY MANAGEMENT</a></li>
+                       <li><a href="personaldriver.html">PERSONEL SECURITY DRIVER</a></li>
+                       <li><a href="convoy.html">PRIVATE SECURED PROCESSION</a></li>
+                       <li><a href="investigator.html">INVESTIGATION CONSULTING</a></li>
+                       <li><a href="receptionists.html">PROFESSIONEL RECEPTIONISTS</a></li>
+                       <li><a href="business-area.html">BUSINESS-AREAS SECURITY SERVICES</a></li>
+                       <li><a href="entry control.html">ACCESS CONTROL MANAGEMENT</a></li>
+                       <li><a href="translog.html">TRANSPORTATION AND LOGISTICS</a></li>
+                       <li><a href="construction.html">CONSTRUCTION SECURITY ASSISTANCE</a></li>
+                       <li><a href="vip hotel.html">VIP HOTEL SECURITY ASSISTANCE</a></li>
+                       <li><a href="port-security.html">PORT SECURITY MANAGEMENT</a></li>
+                       <li><a href="aiport-security.html">AIRPORT SECURITY MANAGEMENT</a></li>
+                       <li><a href="mobile-patrol.html">MOBILE PATROL SECURITY</a></li>
+                 </ul>
+               </li>
+               <li><a href="get to know us.html">ABOUT US</a></li>
+               <li><a href="job.html">GET HIRED</a></li>
+               <li><a href="staff account/stunna.html">STAFF</a></li>
+             </ul>
+           </div>
+           <div class="search-box">
+             <i class='bx bx-search'></i>
+             <div class="input-box">
+               <input type="text" placeholder="Search...">
+             </div>
+           </div>
+         </div>
+       </nav>
+       <br><br><br>
+      <!-- gallery section start -->
+      <div class="gallery_section layout_padding">
+         <div class="container">
+            <div class="gallery_section">
+               <div class="gallery_section_2">
+                  <div class="row">
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="IMAGES/pfense.jpeg" alt="Avatar" class="image">
+                           <div class="overlay">
+                              <div class="text">
+                                 <h4 class="interior_text">POWERED ELECTRIC FENSE</h4>
+                                 <p class="ipsum_text">of passages of Lorem Ipsum available, but the majority have suffer</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="IMAGES/seng5.jpg" alt="Avatar" class="image">
+                           <div class="overlay">
+                              <div class="text">
+                                 <h4 class="interior_text">FINGER PRINT UNLOCKER</h4>
+                                 <p class="ipsum_text">of passages of Lorem Ipsum available, but the majority have suffer</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="images/seng7.jpg" alt="Avatar" class="image">
+                           <div class="overlay">
+                              <div class="text">
+                                 <h4 class="interior_text">CCTV CAMERAS</h4>
+                                 <p class="ipsum_text">of passages of Lorem Ipsum available, but the majority have suffer</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="gallery_section_2">
+                <div class="row">
+                   <div class="col-md-4">
+                      <div class="container_main">
+                         <img src="IMAGES/7.jpg" alt="Avatar" class="image">
+                         <div class="overlay">
+                            <div class="text">
+                               <h4 class="interior_text">ARMORED TRACK</h4>
+                               <p class="ipsum_text">of passages of Lorem Ipsum available, but the majority have suffer</p>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="col-md-4">
+                      <div class="container_main">
+                         <img src="IMAGES/Keyless-Door-Lock-the-Right-Choice.jpg" alt="Avatar" class="image">
+                         <div class="overlay">
+                            <div class="text">
+                               <h4 class="interior_text">DOOR LOCKER</h4>
+                               <p class="ipsum_text">of passages of Lorem Ipsum available, but the majority have suffer</p>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="col-md-4">
+                      <div class="container_main">
+                         <img src="images/irroOne.jpg" alt="Avatar" class="image">
+                         <div class="overlay">
+                            <div class="text">
+                               <h4 class="interior_text">CANINE</h4>
+                               <p class="ipsum_text">of passages of Lorem Ipsum available, but the majority have suffer</p>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="gallery_section_2">
+              <div class="row">
+                 <div class="col-md-4">
+                    <div class="container_main">
+                       <img src="IMAGES/konvoy10.jpg" alt="Avatar" class="image">
+                       <div class="overlay">
+                          <div class="text">
+                             <h4 class="interior_text">CONVOY</h4>
+                             <p class="ipsum_text">of passages of Lorem Ipsum available, but the majority have suffer</p>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="col-md-4">
+                    <div class="container_main">
+                       <img src="IMAGES/South-Shore.png" alt="Avatar" class="image">
+                       <div class="overlay">
+                          <div class="text">
+                             <h4 class="interior_text">DOOR LOCKER</h4>
+                             <p class="ipsum_text">of passages of Lorem Ipsum available, but the majority have suffer</p>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="col-md-4">
+                    <div class="container_main">
+                       <img src="images/Top-motion-sensor-suppliers.jpg" alt="Avatar" class="image">
+                       <div class="overlay">
+                          <div class="text">
+                             <h4 class="interior_text">MOVEMENT SENSER</h4>
+                             <p class="ipsum_text">of passages of Lorem Ipsum available, but the majority have suffer</p>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+
+           <div class="gallery_section_2">
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="container_main">
+                     <img src="IMAGES/redalarm.png" alt="Avatar" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <h4 class="interior_text">CONVOY</h4>
+                           <p class="ipsum_text">of passages of Lorem Ipsum available, but the majority have suffer</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="container_main">
+                     <img src="IMAGES/cc1.jpg" alt="Avatar" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <h4 class="interior_text">DOOR LOCKER</h4>
+                           <p class="ipsum_text">of passages of Lorem Ipsum available, but the majority have suffer</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="container_main">
+                     <img src="images/logistic1.jpg" alt="Avatar" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <h4 class="interior_text">MOVEMENT SENSER</h4>
+                           <p class="ipsum_text">of passages of Lorem Ipsum available, but the majority have suffer</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="gallery_section_2">
+          <div class="row">
+             <div class="col-md-4">
+                <div class="container_main">
+                   <img src="IMAGES/about-img.jpg" alt="Avatar" class="image">
+                   <div class="overlay">
+                      <div class="text">
+                         <h4 class="interior_text">CONVOY</h4>
+                         <p class="ipsum_text">of passages of Lorem Ipsum available, but the majority have suffer</p>
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="col-md-4">
+                <div class="container_main">
+                   <img src="IMAGES/cc2.jpg" alt="Avatar" class="image">
+                   <div class="overlay">
+                      <div class="text">
+                         <h4 class="interior_text">DOOR LOCKER</h4>
+                         <p class="ipsum_text">of passages of Lorem Ipsum available, but the majority have suffer</p>
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="col-md-4">
+                <div class="container_main">
+                   <img src="IMAGES/redalarm1.jpg" alt="Avatar" class="image">
+                   <div class="overlay">
+                      <div class="text">
+                         <h4 class="interior_text">MOVEMENT SENSER</h4>
+                         <p class="ipsum_text">of passages of Lorem Ipsum available, but the majority have suffer</p>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+               <div class="gallery_section_2">
+                  <div class="row">
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="images/barrier.jpg" alt="Avatar" class="image">
+                           <div class="overlay">
+                              <div class="text">
+                                 <h4 class="interior_text">FIRE ALARM</h4>
+                                 <p class="ipsum_text">of passages of Lorem Ipsum available, but the majority have suffer</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="images/walk-through-2.jpg" alt="Avatar" class="image">
+                           <div class="overlay">
+                              <div class="text">
+                                 <h4 class="interior_text">ACCESS ELECTRONIIC BODY CONTROLERS</h4>
+                                 <p class="ipsum_text">of passages of Lorem Ipsum available, but the majority have suffer</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="images/garretto1.jpg" alt="Avatar" class="image">
+                           <div class="overlay">
+                              <div class="text">
+                                 <h4 class="interior_text">ACCESS CAR CONTROLERS</h4>
+                                 <p class="ipsum_text">of passages of Lorem Ipsum available, but the majority have suffer</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- gallery section end -->
+
+      
+      <!-- copyright section end -->
+      <!-- Javascript files-->
+      <script src="irro-js/jquery.min.js"></script> 
+      <script src="irro-js/popper.min.js"></script>
+      <script src="irro-js/bootstrap.bundle.min.js"></script>
+      <script src="irro-js/jquery-3.0.0.min.js"></script>
+      <script src="irro-js/plugin.js"></script> 
+      
+      <script src="front.js"></script>
+  <script>
+    function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+  </script>
+  </body>
+</html>

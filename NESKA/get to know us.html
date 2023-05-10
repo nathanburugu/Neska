@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charstet="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NESKA/about us</title>
+    <link rel="stylesheet" href="front.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+    <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="front.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="job-css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/scrollreveal.min.js">
+    <link rel="stylesheet" href="job-css/style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+  <!-- Basic -->
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<!-- Site Metas -->
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+<!-- bootstrap core css -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+<!-- fonts style -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
+
+<!-- Custom styles for this template -->
+<link href="css/style.css" rel="stylesheet" />
+<!-- responsive style -->
+<link href="css/responsive.css" rel="stylesheet" />
+<style>
+  /* Googlefont Poppins CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+body{
+min-height: 100vh;
+}
+nav{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+height: 70px;
+background: black;
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+z-index: 99;
+}
+nav .navbar{
+height: 100%;
+max-width: 1250px;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin: auto;
+/* background: red; */
+padding: 0 50px;
+}
+.navbar .logo a{
+font-size: 25px;
+color: #fff;
+text-decoration: none;
+font-weight: 100;
+}
+nav .navbar .nav-links{
+line-height: 70px;
+height: 100%;
+}
+nav .navbar .links{
+display: flex;
+}
+nav .navbar .links li{
+position: relative;
+display: flex;
+align-items: center;
+justify-content: space-between;
+list-style: none;
+padding: 0 14px;
+}
+nav .navbar .links li a{
+height: 100%;
+text-decoration: none;
+white-space: nowrap;
+color: #fff;
+font-size: 15px;
+font-weight: 500;
+}
+.links li:hover .htmlcss-arrow,
+.links li:hover .js-arrow{
+transform: rotate(180deg);
+}
+
+nav .navbar .links li .arrow{
+/* background: red; */
+height: 100%;
+width: 22px;
+line-height: 70px;
+text-align: center;
+display: inline-block;
+color: #fff;
+transition: all 0.3s ease;
+}
+nav .navbar .links li .sub-menu{
+position: absolute;
+top: 70px;
+left: 0;
+line-height: 40px;
+background: black;
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+border-radius: 0 0 4px 4px;
+display: none;
+z-index: 2;
+}
+nav .navbar .links li:hover .htmlCss-sub-menu,
+nav .navbar .links li:hover .js-sub-menu{
+display: block;
+}
+.navbar .links li .sub-menu li{
+padding: 0 22px;
+border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.navbar .links li .sub-menu a{
+color: #fff;
+font-size: 15px;
+font-weight: 500;
+}
+.navbar .links li .sub-menu .more-arrow{
+line-height: 40px;
+}
+.navbar .links li .htmlCss-more-sub-menu{
+/* line-height: 40px; */
+}
+.navbar .links li .sub-menu .more-sub-menu{
+position: absolute;
+top: 0;
+left: 100%;
+border-radius: 0 4px 4px 4px;
+z-index: 1;
+display: none;
+}
+.links li .sub-menu .more:hover .more-sub-menu{
+display: block;
+}
+.navbar .search-box{
+position: relative;
+height: 40px;
+width: 40px;
+}
+.navbar .search-box i{
+position: absolute;
+height: 100%;
+width: 100%;
+line-height: 40px;
+text-align: center;
+font-size: 22px;
+color: #fff;
+font-weight: 600;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+.navbar .search-box .input-box{
+position: absolute;
+right: calc(100% - 40px);
+top: 80px;
+height: 40px;
+width: 300px;
+background: black;
+border-radius: 6px;
+opacity: 0;
+pointer-events: none;
+transition: all 0.4s ease;
+}
+.navbar.showInput .search-box .input-box{
+top: 65px;
+opacity: 1;
+pointer-events: auto;
+background: none;
+}
+.search-box .input-box::before{
+content: '';
+position: absolute;
+height: 20px;
+width: 20px;
+background: none;
+right: 10px;
+top: -6px;
+transform: rotate(45deg);
+}
+.search-box .input-box input{
+position: absolute;
+top: 50%;
+left: 50%;
+border-radius: 4px;
+transform: translate(-50%, -50%);
+height: 35px;
+width: 280px;
+outline: none;
+padding: 0 15px;
+font-size: 16px;
+border: none;
+}
+.navbar .nav-links .sidebar-logo{
+display: none;
+}
+.navbar .bx-menu{
+display: none;
+}
+@media (max-width:920px) {
+nav .navbar{
+max-width: 100%;
+padding: 0 25px;
+}
+
+nav .navbar .logo a{
+font-size: 27px;
+font-weight: 200;
+}
+nav .navbar .links li{
+padding: 0 10px;
+white-space: nowrap;
+}
+nav .navbar .links li a{
+font-size: 15px;
+}
+}
+@media (max-width:800px){
+nav{
+/* position: relative; */
+}
+.navbar .bx-menu{
+display: block;
+}
+nav .navbar .nav-links{
+position: fixed;
+top: 0;
+left: -100%;
+display: block;
+max-width: 500px;
+width: 100%;
+background: black;
+line-height: 40px;
+padding: 20px;
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+transition: all 0.5s ease;
+z-index: 1000;
+}
+.navbar .nav-links .sidebar-logo{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.sidebar-logo .logo-name{
+font-size: 25px;
+color: #fff;
+}
+.sidebar-logo  i,
+.navbar .bx-menu{
+  font-size: 25px;
+  color: #fff;
+}
+nav .navbar .links{
+display: block;
+margin-top: 20px;
+}
+nav .navbar .links li .arrow{
+line-height: 40px;
+}
+nav .navbar .links li{
+display: block;
+}
+nav .navbar .links li .sub-menu{
+position: relative;
+top: 0;
+box-shadow: none;
+display: none;
+}
+nav .navbar .links li .sub-menu li{
+border-bottom: none;
+
+}
+.navbar .links li .sub-menu .more-sub-menu{
+display: none;
+position: relative;
+left: 0;
+}
+.navbar .links li .sub-menu .more-sub-menu li{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.links li:hover .htmlcss-arrow,
+.links li:hover .js-arrow{
+transform: rotate(0deg);
+}
+.navbar .links li .sub-menu .more-sub-menu{
+display: none;
+}
+.navbar .links li .sub-menu .more span{
+/* background: red; */
+display: flex;
+align-items: center;
+/* justify-content: space-between; */
+}
+
+.links li .sub-menu .more:hover .more-sub-menu{
+display: none;
+}
+nav .navbar .links li:hover .htmlCss-sub-menu,
+nav .navbar .links li:hover .js-sub-menu{
+display: none;
+}
+.navbar .nav-links.show1 .links .htmlCss-sub-menu,
+.navbar .nav-links.show3 .links .js-sub-menu,
+.navbar .nav-links.show2 .links .more .more-sub-menu{
+  display: block;
+}
+.navbar .nav-links.show1 .links .htmlcss-arrow,
+.navbar .nav-links.show3 .links .js-arrow{
+    transform: rotate(180deg);
+}
+.navbar .nav-links.show2 .links .more-arrow{
+  transform: rotate(90deg);
+}
+}
+@media (max-width:370px){
+nav .navbar .nav-links{
+max-width: 100%;
+} 
+}
+
+ </style>
+
+<style>
+  footer{
+bottom: 0;
+}
+
+@media (max-height:800px){
+footer { position: static; }
+header { padding-top:40px; }
+}
+
+
+.footer-distributed{
+background-color: black;
+box-sizing: border-box;
+width: 100%;
+text-align: left;
+font: bold 16px sans-serif;
+padding: 50px 50px 60px 50px;
+margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+display: inline-block;
+vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+width: 30%;
+}
+
+.footer-distributed h3{
+color:  #ffffff;
+font: normal 36px;
+font-weight: 100;
+font-size: 35px;
+margin: 0;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-left img{
+width: 30%;
+}
+
+.footer-distributed h3 span{
+color:  #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+color:  #ffffff;
+margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+display:inline-block;
+line-height: 1.8;
+text-decoration: none;
+color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+color:  white;
+font-size: 14px;
+font-weight: normal;
+margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+background-color: white;
+color: black;
+font-size: 25px;
+width: 38px;
+height: 38px;
+border-radius: 50%;
+text-align: center;
+line-height: 42px;
+margin: 10px 15px;
+vertical-align: middle;
+}
+.footer-distributed .footer-center i:hover{
+background-color: black;
+color: white;
+border: 1px solid white;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+font-size: 17px;
+line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+display: inline-block;
+color: #ffffff;
+vertical-align: middle;
+margin:0;
+}
+
+.footer-distributed .footer-center p span{
+display:block;
+font-weight: normal;
+font-size:14px;
+line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+color:  white;
+text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+line-height: 20px;
+color:  white;
+font-size: 13px;
+font-weight: normal;
+margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+display: block;
+color:  #ffffff;
+font-size: 18px;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+display: inline-block;
+width: 35px;
+height: 35px;
+cursor: pointer;
+background-color: white;
+border-radius: 2px;
+
+font-size: 20px;
+color: black;
+text-align: center;
+line-height: 35px;
+
+margin-right: 3px;
+margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover{
+background-color: black;
+color: white;
+border: 1px solid white;
+}
+
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+
+@media (max-width: 880px) {
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+display: block;
+width: 100%;
+margin-bottom: 40px;
+text-align: center;
+}
+
+.footer-distributed .footer-center i{
+margin-left: 0;
+}
+
+}
+.footer-distributed .footer-left h3 {
+color: white;
+}
+</style>
+
+</head>
+<body>
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="#" style="font-weight: 100;">NESKA</a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">NESKA</span>
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links">
+          <li><a href="#">HOME</a></li>
+          <li>
+            <a href="#">STATES SECURITY</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="home electronics.html">SECURITY ELECTRIC & ELECTRONIC</a></li>
+              <li class="more">
+                <span><a href="#">PRIVATE GUARDING</a>
+                <i class='bx bxs-chevron-right arrow more-arrow'></i>
+              </span>
+                <ul class="more-sub-menu sub-menu">
+                  <li><a href="manned security guarding.html">MANNED SECURITY GUARDING</a></li>
+                  <li><a href="private canine security.html">CANINE SECURITY</a></li>
+                  <li><a href="physical security.html">PHYSICAL SECURITY ASSISTANCE</a></li>
+                  <li><a href="private armored guarding.html">ARMORED SECURITY GUARDING</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+          <li>
+            <a href="#">MORE SERVICES</a>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li><a href="event single guard.html">EVENTS SECURITY SERVICES</a></li>
+                  <li><a href="banking.html">BAKING SECURITY SERVICES</a></li>
+                  <li><a href="prsnl team guards.html">PERSONEL SECURITY MANAGEMENT</a></li>
+                  <li><a href="personaldriver.html">PERSONEL SECURITY DRIVER</a></li>
+                  <li><a href="convoy.html">PRIVATE SECURED PROCESSION</a></li>
+                  <li><a href="investigator.html">INVESTIGATION CONSULTING</a></li>
+                  <li><a href="receptionists.html">PROFESSIONEL RECEPTIONISTS</a></li>
+                  <li><a href="business-area.html">BUSINESS-AREAS SECURITY SERVICES</a></li>
+                  <li><a href="entry control.html">ACCESS CONTROL MANAGEMENT</a></li>
+                  <li><a href="translog.html">TRANSPORTATION AND LOGISTICS</a></li>
+                  <li><a href="construction.html">CONSTRUCTION SECURITY ASSISTANCE</a></li>
+                  <li><a href="vip hotel.html">VIP HOTEL SECURITY ASSISTANCE</a></li>
+                  <li><a href="port-security.html">PORT SECURITY MANAGEMENT</a></li>
+                  <li><a href="aiport-security.html">AIRPORT SECURITY MANAGEMENT</a></li>
+                  <li><a href="mobile-patrol.html">MOBILE PATROL SECURITY</a></li>
+            </ul>
+          </li>
+          <li><a href="get to know us.html">ABOUT US</a></li>
+          <li><a href="job.html">GET HIRED</a></li>
+          <li><a href="staff account/stunna.html">STAFF</a></li>
+        </ul>
+      </div>
+      <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+          <input type="text" placeholder="Search...">
+        </div>
+      </div>
+    </div>
+  </nav>
+<br><br>
+
+<!-- About Section Start -->
+
+<section class="about_section layout_padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 px-0">
+        <div class="detail-box">
+          <div class="heading_container ">
+            <h2>
+              Who we are
+            </h2>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            in reprehenderit in voluptate velit
+          </p>
+          <div class="btn-box">
+            <a href="why choose-us.html">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 px-0">
+        <div class="img_container">
+          <div class="img-box">
+            <img src="images/about-img2.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- end about section-->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="kamoyo/css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- nice select -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
+  <!-- font awesome style -->
+  <link href="kamoyo/css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="kamoyo/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="kamoyo/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero_area">
+  <!-- service section -->
+
+  <section class="service_section layout_padding-bottom">
+    <div class="container-fluid">
+      <div class="heading_container heading_center ">
+        <br>
+        <h2 class="" style="color: black;">
+          Our Main Services
+        </h2><br>
+        <p class="col-lg-8 px-0" style="color: black;">
+          If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
+        </p>
+      </div>
+      <div class="service_container">
+        <div class="carousel-wrap ">
+          <div class="service_owl-carousel owl-carousel">
+            <div class="item">
+              <div class="box ">
+                <div class="img-box">
+                  <img src="kamoyo/images/s1.png" alt="" />
+                </div>
+                <div class="detail-box">
+                  <h5 style="color: white;">
+                    Home Security
+                  </h5>
+                  <p>
+                    Repellat perspiciatis sint in minus! Quaerat numquam nobis expedita debitis aut optio omnis voluptas quos voluptatem possimus reprehenderit repellendus mollitia.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box ">
+                <div class="img-box">
+                  <img src="kamoyo/images/s2.png" alt="" />
+                </div>
+                <div class="detail-box">
+                  <h5 style="color: white;">
+                    Personal Security
+                  </h5>
+                  <p>
+                    Repellat perspiciatis sint in minus! Quaerat numquam nobis expedita debitis aut optio omnis voluptas quos voluptatem possimus reprehenderit repellendus mollitia.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box ">
+                <div class="img-box">
+                  <img src="kamoyo/images/chien1.jpg" alt="" />
+                </div>
+                <div class="detail-box">
+                  <h5 style="color: white;">
+                    Canine Security
+                  </h5>
+                  <p>
+                    Repellat perspiciatis sint in minus! Quaerat numquam nobis expedita debitis aut optio omnis voluptas quos voluptatem possimus reprehenderit repellendus mollitia.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box ">
+                <div class="img-box">
+                  <img src="kamoyo/images/s4.png" alt="" />
+                </div>
+                <div class="detail-box">
+                  <h5 style="color: white;">
+                    Electrical Security
+                  </h5>
+                  <p>
+                    Repellat perspiciatis sint in minus! Quaerat numquam nobis expedita debitis aut optio omnis voluptas quos voluptatem possimus reprehenderit repellendus mollitia.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box ">
+                <div class="img-box">
+                  <img src="kamoyo/images/s5.png" alt="" />
+                </div>
+                <div class="detail-box">
+                  <h5 style="color: white;">
+                    Armored Security
+                  </h5>
+                  <p>
+                    Repellat perspiciatis sint in minus! Quaerat numquam nobis expedita debitis aut optio omnis voluptas quos voluptatem possimus reprehenderit repellendus mollitia.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- service section ends -->
+
+  <!-- why us section -->
+
+  <section class="why_us_section layout_padding">
+    <div class="why_bg_box">
+      <img src="IMAGES/backup guardz.jpg" alt="">
+    </div>
+    <div class="why_us_container">
+      <div class="container">
+        <div class="heading_container heading_center">
+          <h2 style="color: white;">
+            Why Choose Us
+          </h2>
+          <p>
+            Pariatur ullam dolore commodi explicabo minima maxime quisquam
+          </p>
+        </div>
+        <div class="box_container">
+          <div class="row">
+            <div class="col-sm-6 col-md-3">
+              <div class="box">
+                <div class="num-box">
+                  <span id="countDay" class="count">
+                    +137
+                  </span>
+                </div>
+                <h5 style="color: white;">
+                  footpoints
+                </h5>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="box">
+                <div class="num-box">
+                  <span id="countHour" class="count">
+                    +1472
+                  </span>
+                </div>
+                <h5 style="color: white;">
+                  Satisfied Clients
+                </h5>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="box">
+                <div class="num-box">
+                  <span id="countMin" class="count">
+                    +207
+                  </span>
+                </div>
+                <h5 style="color: white;">
+                  employees
+                </h5>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="box">
+                <div class="num-box">
+                  <span id="countSec" class="count">
+                    +119
+                  </span>
+                </div>
+                <h5 style="color: white;">
+                  security products
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end why us section -->
+<p>
+     <span id="displayYear" style="color: white;"></span> 
+      </p>
+
+  <!-- jQery -->
+  <script src="kamoyo/js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <!-- bootstrap js -->
+  <script src="kamoyo/js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+  <!-- custom js -->
+  <script src="kamoyo/js/custom.js"></script>
+
+</body>
+</html>
+
+<br><br>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Three columns side by side */
+      .column2 {
+      float: left;
+      width: 40.3%;
+      margin-bottom: 16px;
+      padding: 0 4px;
+      margin-left: 6.5%;
+      }
+      /* Display the columns below each other instead of side by side on small screens */
+      @media screen and (max-width: 650px) {
+      .column2 {
+      width: 88%;
+      display: block;
+      }
+      }
+      
+      /* Add some shadows to create a card effect */
+      .card2 {
+      box-shadow: 0 2px 4px 0 white;
+      }
+      
+      /* Some left and right padding inside the container */
+      .containa {
+      padding: 0 16px;
+      }
+      
+      /* Clear floats */
+      .containa::after, .row2::after {
+      content: "";
+      clear: both;
+      display: table;
+      }
+      .row2 .column2 .card2 .containa .btn{
+        background-color: black;
+        border: 2px solid black; 
+        font-size: 18px;
+        padding: 12px;
+        cursor: pointer;
+        color: white;
+      }
+      .row2 .column2 .card2 .containa .btn:hover{
+        background-color: white;
+        color: black;
+        border: 2px solid black; 
+        cursor: pointer;
+        margin-left: 2px; 
+      }
+      </style>
+</head>
+<body>
+<br><br>
+<p align="center" style="color: black;">
+  <font face="sans-serif" size="5">Emergency Services</font>
+</p>
+<p align="center">
+    <font face="sans-serif" size="3">We have all materials needed to secure and to assume peace and stability.</font>
+  </p>
+<br><br>
+<div class="row2">
+  <div class="column2">
+    <div class="card2">
+      <img src="IMAGES/backup guards.jpg" alt="" style="width:100%">
+      <div class="containa">
+        <p style="color: black;"><br>
+            <font face="sans-serif" size="4">Physical Security Response</font>
+          </p>
+          <p>
+            <font face="sans-serif" size="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ad possimus labore reprehenderit mollitia, perspiciatis repudiandae sit incidunt ipsa illum eaque voluptate doloremque sint placeat non nesciunt, quam voluptatum.</font>
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column2">
+    <div class="card2">
+      <img src="IMAGES/fire sec.jpg" alt="" style="width:100%">
+      <div class="containa">
+        <p style="color: black;"><br>
+            <font face="sans-serif" size="4">Alarm & Fire Rescue</font>
+          </p>
+          <p>
+            <font face="sans-serif" size="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ad possimus labore reprehenderit mollitia, perspiciatis repudiandae sit incidunt ipsa illum eaque voluptate doloremque sint placeat non nesciunt, quam voluptatum.</font>
+          </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br><br>
+<div class="row2">
+  <div class="column2">
+    <div class="card2">
+      <img src="IMAGES/sga-response.jpg" alt="" style="width:100%">
+      <div class="containa">
+        <p style="color: black;"><br>
+            <font face="sans-serif" size="4">Mobile Response</font>
+          </p>
+          <p>
+            <font face="sans-serif" size="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ad possimus labore reprehenderit mollitia, perspiciatis repudiandae sit incidunt ipsa illum eaque voluptate doloremque sint placeat non nesciunt, quam voluptatum.</font>
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column2">
+    <div class="card2">
+      <img src="IMAGES/didit.jpg" alt="" style="width:100%">
+      <div class="containa">
+        <p style="color: black;"><br>
+            <font face="sans-serif" size="4">Armored Mobile Response</font>
+          </p>
+          <p>
+            <font face="sans-serif" size="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ad possimus labore reprehenderit mollitia, perspiciatis repudiandae sit incidunt ipsa illum eaque voluptate doloremque sint placeat non nesciunt, quam voluptatum.</font>
+          </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br><br>
+
+
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
+<!-- end service section -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="job-css/style.css">
+
+    <!-- bootstrap core css -->
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <!-- responsive style -->
+  <link href="offset/css/responsive.css" rel="stylesheet" />
+  <style>
+    .footer-distributed .footer-center img{
+      width: 50%;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="section about" id="about">
+    <div class="about-content container">
+            
+            <div class="about-details">
+                    <div class="about-text">
+                            <h4 class="content-subtitle" style="color: black;"><i>Get Served Today</i></h4>
+                            <h2 class="content-title" style="color: black;">INTERESTED IN OUR SERVICES?!</h2>
+                            <p class="content-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut maxime tenetur saepe tempore repellendus aliquam sapiente ex, reprehenderit dicta, sint exercitationem! Recusandae id veritatis quod ratione atque tempore rem autem.</p>
+                            <p class="content-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut maxime tenetur saepe tempore repellendus aliquam sapiente ex, reprehenderit dicta, sint exercitationem! Recusandae id veritatis quod ratione atque tempore rem autem.</p>
+  
+                    
+                    </div>
+  
+                    <div class="about-buttons flex">
+                            <button class="button">+254 741 1511 59</button>
+                            <a href="tel:0741151159" class="about-link flex">
+                                    <span class="link-text">GET IN TOUCH WITH US NOW</span>
+                                    <i class='bx bx-right-arrow-alt about-arrowIcon'></i>
+                            </a>
+                    </div>
+            </div>
+            <div class="about-imageContent">
+              <img src="images/A1.jpg" alt="" class="about-img">
+  
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-distributed">
+    <div class="footer-left">
+        <h3>NESKA</h3>
+        <p class="footer-links">
+            <a href="#">Manned Security Guarding</a>
+            |
+            <a href="22.html">Security Dogs</a>
+            |
+            <a href="28.html">Personal Security Management</a>
+            |
+            <a href="24.html">Electronic & Electric Security Products</a>
+            |
+            <a href="24.html">Access Security Control</a>
+  
+        </p>
+        <p style="color: white; font-weight: 200;">Get Our Mobile App on:</p><br>
+        <a href="#"><img src="https://i.ibb.co/KbPTYYQ/play-store.png" alt="" /></a>
+            <a href="#"><img src="https://i.ibb.co/hVM4X2p/app-store.png" alt="" /></a>
+    </div>
+  
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+              <p><span>Nairobi-Kenya,
+                Park-Lands</span>
+                P.O. BOX 1208-00200 NAIROBI, KENYA.
+                </p>
+        </div>
+  
+        <div>
+            <i class="fa fa-phone"></i>
+            <p><a href="tel:+254741151159">+254 741 151 159</a></p>
+        </div>
+        <div>
+          <i class="fa fa-clock-o" aria-hidden="true"></i>
+          <p>Available 24/7</p>
+      </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto"></a>info@neska.org</a></p>
+        </div>
+        <div>
+          <i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i>
+          <img src="images/card_img.png" alt="">
+        </div>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>About <em>Company</em></span>
+            We offer our best security system abilities to assume stability and safety of anything, from everywhere, at anytime and anyhowly just with assurance and confidence from our proffessional<br>
+            We from everywhere, experiences!.</p>
+        
+            <p class="footer-company-about" style="color: gray; font-size: 15px;">
+              <span></em></span>
+              We at anytime and anyhowly just with assurance and confidence from our proffessional<br>
+              We from everywhere proffessional experiences!.</p>
+        <div class="footer-icons">
+            <a href="facebook.com"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+    </div>
+  </footer>
+  <script src="front.js"></script>
+  <script>
+    function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+  </script>
+
+<!-- Swiper JS -->
+<script src="job-js/swiper-bundle.min.js"></script>
+
+<!-- Scroll Reveal -->
+<script src="job-js/scrollreveal.js"></script>
+
+<!-- JavaScript -->
+    <script src="job-js/script.js"></script>
+</body>
+</html>
